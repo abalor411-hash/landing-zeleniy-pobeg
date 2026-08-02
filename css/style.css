@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-mobile: 80px;
+  --space-desktop: 120px;
+}
+
+body {
+  background-color: #f7f4ef;
+  color: #222;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  color: #2f4f3e;
+}
+
+a {
+  color: #a85838;
+}
+.button {
+  background-color: #a85838;
+}
+.search-form__error {
+  color: red;
+}
+
+section {
+  margin-top: var(--space-mobile);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav ul {
+  display: none;
+}
+
+.main-nav ul.active {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-24);
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-24);
+}
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: var(--space-16);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.card__link {
+  transition: transform 0.2s ease;
+}
+.card__link:hover {
+  color: cyan;
+}
+.social-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-24);
+}
+.legal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-24);
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-top: var(--space-desktop);
+  }
+  .main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-24);
+  }
+  .burger {
+    display: none;
+  }
+}

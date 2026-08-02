@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Зелёный Побег — эко-отели</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <button class="burger" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+      </button>
+      <img
+        class="logo"
+        src="./assets/image/logo.webp"
+        alt="Логотип компании ЗЕЛЕНЫЙ ПОБЕГ"
+        width="20"
+        height="20"
+      />
+      <p>Твой отдых в гармонии с природой</p>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Популярное</a></li>
+          <li><a href="#">Преимущества</a></li>
+          <li><a href="#">Интересно</a></li>
+        </ul>
+      </nav>
+      <a href="#">Войти в профиль</a>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title">
+          Найди свой идеальный эко-отель вдали от городской суеты
+        </h1>
+        <p>
+          Бронируйте уникальные глэмпинги, лесные хижины и эко-базы по всей
+          стране. Отдыхайте с комфортом и без вреда для окружающей среды.
+        </p>
+        <form class="search-form">
+          <label class="search-form__label" for="city"
+            >Куда едем? (Город или локация)</label
+          >
+          <input class="search-form__input" type="text" id="city" name="city" />
+
+          <label class="search-form__label" for="date-in">Дата заезда</label>
+          <input
+            class="search-form__input"
+            type="date"
+            id="date-in"
+            name="date-in"
+          />
+
+          <label class="search-form__label" for="date-out">Дата выезда</label>
+          <input
+            class="search-form__input"
+            type="date"
+            id="date-out"
+            name="date-out"
+          />
+
+          <label class="search-form__label" for="guest"
+            >Количество гостей</label
+          >
+          <input
+            class="search-form__input"
+            type="number"
+            id="guest"
+            name="guest"
+          />
+          <span class="search-form__error" aria-live="polite"></span>
+          <button class="button search-form__button" type="submit">
+            Найти варианты
+          </button>
+        </form>
+      </section>
+
+      <section class="popular">
+        <h2 class="popular__title">Популярные направления для перезагрузки</h2>
+        <ul class="card-list">
+          <li class="card">
+            <h3 class="card__title">Алтай</h3>
+            <p class="card__description">
+              Откройте для себя места силы, бирюзовые реки и нетронутую тайгу.
+            </p>
+            <img
+              class="card__img"
+              src="/assets/image/photo.webp"
+              alt="Деревянный а-фрейм домик с видом на горы Алтая"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <a class="card__link" href="#">Смотреть отели</a>
+          </li>
+          <li class="card">
+            <h3 class="card__title">Карелия</h3>
+            <p class="card__description">
+              Тихие озера, густые хвойные леса и уютные домики на воде.
+            </p>
+            <img
+              class="card__img"
+              src="/assets/image/photo1.webp"
+              alt="Глэмпинг на берегу туманного озера в Карелии"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <a class="card__link" href="#">Смотреть отели</a>
+          </li>
+          <li class="card">
+            <h3 class="card__title">Красная Поляна</h3>
+            <p class="card__description">
+              Эко-курорты с панорамным видом на заснеженные Кавказские горы.
+            </p>
+            <img
+              class="card__img"
+              src="/assets/image/photo2.webp"
+              alt="Эко-отель из сруба в горах Красной Поляны"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <a class="card__link" href="#">Смотреть отели</a>
+          </li>
+          <li class="card">
+            <h3 class="card__title">Байкал</h3>
+            <p class="card__description">
+              Кристально чистое озеро и аутентичные современные юрты на берегу.
+            </p>
+            <img
+              class="card__img"
+              src="/assets/image/photo3.webp"
+              alt="Утепленная юрта на берегу зимнего Байкала"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <a class="card__link" href="#">Смотреть отели</a>
+          </li>
+          <li class="card">
+            <h3 class="card__title">Камчатка</h3>
+            <p class="card__description">
+              Экстремальная природа, термальные источники и комфортные базы.
+            </p>
+            <img
+              class="card__img"
+              src="/assets/image/photo4.webp"
+              alt="Панорамный купол на фоне вулкана на Камчатке"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <a class="card__link" href="#">Смотреть отели</a>
+          </li>
+          <li class="card">
+            <h3 class="card__title">Подмосковье</h3>
+            <p class="card__description">
+              Идеальные лесные отели для выходных всего в паре часов от столицы.
+            </p>
+            <img
+              class="card__img"
+              src="/assets/image/photo5.webp"
+              alt="Сферический дом в сосновом лесу Подмосковья"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <a class="card__link" href="#">Смотреть отели</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="featured">
+        <h2 class="featured__title">Почему выбирают «Зелёный Побег»</h2>
+        <ul class="card-list">
+          <li class="card card--featured">
+            <img
+              class="card__img card__img--featured"
+              src="/assets/image/photo6.webp"
+              alt="Иконка зеленого листа"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <h3 class="card__title card__title--featured">100% Эко-стандарт</h3>
+            <p class="card__description card__description--featured">
+              Мы проверяем каждый отель на бережное отношение к природе,
+              сортировку мусора и использование возобновляемых ресурсов.
+            </p>
+          </li>
+
+          <li class="card card--featured">
+            <img
+              class="card__img card__img--featured"
+              src="/assets/image/photo7.webp"
+              alt="Иконка компаса"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <h3 class="card__title card__title--featured">
+              Гарантия уединения
+            </h3>
+            <p class="card__description card__description--featured">
+              Наши локации находятся вдали от шумных трасс и массовых
+              туристических маршрутов, чтобы вы могли насладиться тишиной.
+            </p>
+          </li>
+
+          <li class="card card--featured">
+            <img
+              class="card__img card__img--featured"
+              src="/assets/image/photo8.webp"
+              alt="Иконка службы поддержки"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+            <h3 class="card__title card__title--featured">Поддержка 24/7</h3>
+            <p class="card__description card__description--featured">
+              Ваш личный менеджер всегда на связи: от момента бронирования до
+              благополучного возвращения домой.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <article class="article">
+        <h2 class="article__title">
+          Эко-туризм: новый уровень осознанного отдыха
+        </h2>
+        <p class="article__paragraph">
+          В последние годы эко-туризм перестал быть просто модным трендом и
+          превратился в осознанную необходимость. Жители мегаполисов всё чаще
+          отказываются от шумных курортов в пользу тихих уголков дикой природы.
+          Это возможность не только перезагрузить нервную систему, но и внести
+          свой вклад в сохранение окружающей среды, выбирая места, которые
+          заботятся о природе.
+        </p>
+        <p class="article__paragraph">
+          Современные эко-отели и глэмпинги доказывают, что отдых в лесу или
+          горах не означает отказ от комфорта. Вы можете наслаждаться мягкой
+          постелью, горячим душем и ресторанной едой, находясь при этом в
+          панорамном куполе посреди тайги. Главное правило таких объектов —
+          минимальное вмешательство в ландшафт и использование экологичных
+          материалов.
+        </p>
+        <p class="article__paragraph">
+          Платформа «Зелёный Побег» тщательно отбирает локации для вашего
+          идеального уикенда. Мы сотрудничаем только с теми владельцами, которые
+          разделяют наши ценности: поддерживают локальные фермерские хозяйства и
+          минимизируют углеродный след. Ваш отдых должен приносить пользу не
+          только вам, но и планете.
+        </p>
+        <blockquote class="article__quote">
+          <p>
+            «Природа — это не место для посещения. Это наш дом. Выбирая
+            экологичный отдых, мы возвращаемся к истокам и учимся слышать
+            тишину.»
+          </p>
+          <footer>— Анна Смирнова, эксперт по устойчивому туризму.</footer>
+        </blockquote>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        Копирайт: © 2026 Сервис бронирования «Зелёный Побег». Все права
+        защищены.
+      </p>
+      <ul class="social-nav">
+        <li>
+          <a href="#" class="social-nav__link">Telegram</a>
+        </li>
+        <li>
+          <a href="#" class="social-nav__link">ВКонтакте</a>
+        </li>
+        <li>
+          <a href="#" class="social-nav__link">YouTube</a>
+        </li>
+      </ul>
+      <ul class="legal-nav">
+        <li>
+          <a class="legal-nav__link" href="#">Политика конфиденциальности</a>
+        </li>
+        <li>
+          <a class="legal-nav__link" href="#">Пользовательское соглашение</a>
+        </li>
+        <li>
+          <a class="legal-nav__link" href="#">Правила бронирования и отмены</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
